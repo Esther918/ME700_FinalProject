@@ -1,0 +1,3 @@
+ChatGPT was used in this project. 
+I used ChatGPT for constrainting different entities (using MultiPointConstraint) and also importing the mesh result from pygmesh and gmsh to DOLFINx. 
+ChatGPT helped me with debugging the code.
