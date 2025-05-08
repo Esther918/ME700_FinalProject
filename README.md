@@ -28,8 +28,8 @@ Left optical fiber tip: 1.50e-02 m
 Right optical fiber tip: 0.00e+00 m  
 Elastin strain: 4066.66 % (Original length: 3.60e-04 m)  
 Experimental data:  
-Left optical fiber tip: 0.000922 m  
-Right optical fiber tip: 0.000686 m  
+Left optical fiber tip: 9.22e-04 m  
+Right optical fiber tip: 6.86e-04 m  
 Elastin strain: 3620.00 %  
 elastin_curve.jpg is a experimental stress strain curve of a elastin fiber.  
 
