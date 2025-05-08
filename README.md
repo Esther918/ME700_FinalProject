@@ -34,10 +34,12 @@ elastin_curve.jpg is a experimental stress strain curve of a elastin fiber.
 ### ME700 Applied Skills
 **Technical Knowledge**  
 * Implement finite element analysis techniques for solving complex mechanical problems  
-* Analyze and solve problems involving material nonlinearity and geometric nonlinearity (large deformation in this project)  
-**Software Development & Implementation**
+* Analyze and solve problems involving material nonlinearity and geometric nonlinearity (large deformation in this project)
+
+**Software Development & Implementation**  
 * Use GitHub for code management  
 * Python programming including implenting open sources code
+
 **Integration & Application**
 * Design and implement comprehensive solutions that integrate mechanical theory with practical software implementation
 * Create modular, reusable code that follows software engineering best practices while solving mechanics problems
