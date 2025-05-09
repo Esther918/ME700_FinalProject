@@ -21,7 +21,7 @@ To run the code
 ```bash
 python simulation.py
 ```
-See process.gif for the simulation result.  
+See simulation.gif for the simulation result.  
 The comparison between this simulation and the experimental data:  
 Final tip displacement (simulation):
 Left optical fiber tip: 1.50e-02 m  
