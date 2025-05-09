@@ -238,25 +238,26 @@ for i, disp in enumerate(displacement_steps):
     solver.rtol = 1e-6
     solver.atol = 1e-8
     solver.max_it = 50
-    
+
+    u_mpc = fem.Function(mpc.function_space)
     try:
-        n, converged = solver.solve(u)
+        n, converged = solver.solve(u_mpc)
         if converged:
             print(f"Converged in {n} iterations")
         else:
             print(f"Warning: Did not converge")
-        solutions.append(u.copy())
+        solutions.append(u_mpc.copy())
         
         with io.XDMFFile(domain.comm, f"step_{i}.xdmf", "w") as xdmf:
             xdmf.write_mesh(domain)
-            xdmf.write_function(u)
+            xdmf.write_function(u_mpc)
             
     except Exception as e:
         print(f"Error at displacement {disp}: {e}")
         if solutions:
             solutions.append(solutions[-1].copy())
         else:
-            solutions.append(u.copy())  
+            solutions.append(u_mpc.copy())  
         
 # Analytical solution
 # Tip displacement
