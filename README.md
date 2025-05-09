@@ -1,9 +1,10 @@
 # ME700_FinalProject
 ## Simulation of Elastin Fiber Stretching  
-This code simulates the elastin fiber stretching process. I used pygmsh and gmsh to mesh the 3 columns, one is left glass optical fiber, connecting the elastin fiber from the top, another is elastin fiber, the other one is the right glass optical fiber, which is conecting to the bottom of the elastin fiber. See below schematic for the device set up.  
+This code simulates the elastin fiber stretching process. Pygmsh and gmsh were used to mesh structure. The structure consist of 3 columns, one is left glass optical fiber, connecting the elastin fiber from the top, another is elastin fiber, and the other one is the right glass optical fiber, which is conecting to the bottom of the elastin fiber. See below schematic for the device set up.  
 ![schematic of stretching device.jpg](https://github.com/Esther918/ME700_FinalProject/blob/main/schematic%20of%20stretching%20device.jpg)
-After meshing them, I imported the .xdml file to DOLFINx for finite element analysis, including setting up the boundary condition, tying the three columns together, and applying both linear elasicity model and Neo-Hookean model.  
-Finally, pyvista show the whole simulation process with a .gif file.  
+The resulting .xdmf file was imported into DOLFINx, where boundary conditions were defined, the columns were tied together, and different material models were applied, that is linear elasticity model (for optical fiber) and a Neo-Hookean hyperelastic model (for elastin fiber).
+Finally, PyVista was used to visualize the simulation and create an animated .gif showing the deformation process.   
+
 ### Reproducibility  
 Let's start with setting up FENicsX environment  
 ```bash
